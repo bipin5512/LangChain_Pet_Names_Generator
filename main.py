@@ -18,8 +18,10 @@ if pet_color:
     response = lch.langchain_prompt_chain_pet_name_generator(animal_type=animal_type, pet_color=pet_color)
     st.text(response['pet_name'])
 
-if animal_type and pet_color :
-    st.sidebar.button("Submit")
+
+if animal_type:
+    st.sidebar.button("Generate")
+
 
 
 #Command to run streamlit
